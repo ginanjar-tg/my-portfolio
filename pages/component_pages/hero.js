@@ -47,7 +47,7 @@ export default function Hero() {
               <br />
               <br />
               I fell in love with programming and I have at least learnt
-              something, I think.. <br />
+              something, I think... <br />
               I am fluent in classics like Java and MySQL. <br />
               My field of Interests are building new Web Technologies and
               Products. <br />
