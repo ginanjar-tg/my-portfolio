@@ -5,7 +5,7 @@ export default function Navbar() {
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
-        <div class="w-full navbar bg-blue-500 text-white">
+        <div class="w-full navbar bg-gray-800 text-white fixed">
           <div class="flex-none lg:hidden">
             <label for="my-drawer-3" class="btn btn-square btn-ghost">
               <svg
@@ -23,18 +23,26 @@ export default function Navbar() {
               </svg>
             </label>
           </div>
-          <div class="flex-1 px-2 mx-2 font-bold text-xl">My Portfolio</div>
-          <div class="flex-none hidden lg:block">
+          <a class="flex-1 px-2 mx-2 font-bold text-xl" href="#home">
+            My Portfolio
+          </a>
+          <div class="flex-none hidden lg:block font-bold">
             <ul class="menu menu-horizontal">
               {/* <!-- Navbar menu content here --> */}
               <li>
-                <a>Skills</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a>Project</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#resume">Resume</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -44,16 +52,22 @@ export default function Navbar() {
       </div>
       <div class="drawer-side">
         <label for="my-drawer-3" class="drawer-overlay"></label>
-        <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+        <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 font-bold">
           {/* <!-- Sidebar content here --> */}
           <li>
-            <a>Skills</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a>Project</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a>Contact</a>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
