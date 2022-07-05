@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div>
       <section id="home">
-        <div class="bg-gray-800 text-white mt-20">
+        <div className="bg-gray-800 text-white mt-20">
           <br />
           <div className="h-32 w-32 md:h-64 md:w-64 relative mx-auto">
             <Image
@@ -66,7 +66,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
         <div>
           <p>Copyright © Ginanjar Tubagus Gumilar</p>
         </div>
