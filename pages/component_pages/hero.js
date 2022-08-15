@@ -82,7 +82,7 @@ export default function Hero() {
             Stuff I Have Done
           </div>
           <div className="text-xs md:text-lg py-10 md:py-20">
-            <p className="text-center">
+            <p className="text-center px-5">
               Here are some cool website projects I have created using PHP and
               JavaScript. Some of them use CodeIgniter and NextJS frameworks.
             </p>
