@@ -79,7 +79,7 @@ export default function Hero() {
         <div className="bg-gray-900 h-full font-poppins text-white -mt-5">
           <br />
           <div className="text-center font-bold text-xl md:text-4xl">
-            Stuff I have Done
+            Stuff I Have Done
           </div>
           <div className="text-xs md:text-lg py-10 md:py-20">
             <p className="text-center">
@@ -99,7 +99,8 @@ export default function Hero() {
                     CRUD Bakso
                   </h5>
                   A CRUD systems to save the data of meatball ingredients stock.
-                  This app has also been equipped with a login system.
+                  This app using CodeIgniter framework and also has been
+                  equipped with a login system.
                   <br />
                   <a
                     href="#"
@@ -143,13 +144,12 @@ export default function Hero() {
               <p>
                 Here is my CV to know more about me. Like the old saying… <br />
                 <br />
-                <div className="shadow-xl w-full md:w-1/2 h-full p-5 bg-white rounded-lg text-xl md:text-2xl font-semibold m-auto text-center">
+                <div className="shadow-xl w-full md:w-1/2 h-full p-5 bg-white rounded-lg text-lg md:text-2xl font-semibold m-auto text-center">
                   <i> &quot; Out of sight, out of mind &quot;</i>
                 </div>
                 <br />
                 <a
-                  href="cv.pdf"
-                  download
+                  href="https://ginanjartg.me/resume/cv.pdf"
                   className="font-bold mt-10 inline-flex items-center p-3 text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Download My CV
