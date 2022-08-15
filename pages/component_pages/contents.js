@@ -1,11 +1,11 @@
 import Hero from "./hero";
-export default function Navbar() {
+export default function Contents() {
   return (
     <div className="drawer">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
-        <div className="w-full navbar bg-gray-800 text-white fixed">
+        <div className="w-full navbar bg-gray-900 text-white fixed z-30">
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
               <svg
@@ -24,7 +24,7 @@ export default function Navbar() {
             </label>
           </div>
           <a className="flex-1 px-2 mx-2 font-bold text-xl" href="#home">
-            My Portfolio
+            Ginanjar's Portfolio
           </a>
           <div className="flex-none hidden lg:block font-bold">
             <ul className="menu menu-horizontal">

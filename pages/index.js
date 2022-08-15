@@ -1,14 +1,21 @@
-import Navbar from "./component_pages/navbar.js";
+import Contents from "./component_pages/contents.js";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
   return (
-    <>
-    <head>
-  <title>GinanjarTG</title>
-</head>
-      <div className="bg-gray-800">
-        <Navbar />
-      </div>
-    </>
+    isLoaded && (
+      <>
+        <head>
+          <title>Ginanjar's Portfolio</title>
+        </head>
+        <div className="bg-gray-900">
+          <Contents />
+        </div>
+      </>
+    )
   );
 }
