@@ -171,7 +171,7 @@ export default function Hero() {
         <div className="bg-gray-900 h-full font-poppins text-white -mt-5 py-14">
           <br />
           <div className="text-center font-bold text-xl md:text-4xl">
-            Let&quot;s Work Together!
+            Let&apos;s Work Together!
           </div>
           <div className="text-xs md:text-lg py-10 md:py-20">
             <p className="text-center">
