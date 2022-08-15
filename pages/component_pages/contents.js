@@ -24,7 +24,7 @@ export default function Contents() {
             </label>
           </div>
           <a className="flex-1 px-2 mx-2 font-bold text-xl" href="#home">
-            Ginanjar's Portfolio
+            GinanjarTG Portfolio
           </a>
           <div className="flex-none hidden lg:block font-bold">
             <ul className="menu menu-horizontal">

@@ -10,7 +10,7 @@ export default function Home() {
     isLoaded && (
       <>
         <head>
-          <title>Ginanjar's Portfolio</title>
+          <title>GinanjarTG Portfolio</title>
         </head>
         <div className="bg-gray-900">
           <Contents />
