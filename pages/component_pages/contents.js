@@ -36,7 +36,7 @@ export default function Contents() {
                 <a href="#about">About</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#item1">Projects</a>
               </li>
               <li>
                 <a href="#resume">Resume</a>

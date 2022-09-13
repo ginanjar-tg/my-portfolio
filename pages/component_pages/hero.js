@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div>
       <section id="home">
-        <div className="bg-gray-900 text-white mt-20 w-screen h-full">
+        <div className="bg-gray-900 text-white pt-14 w-screen h-full">
           <br />
           <div className="h-32 w-32 md:h-64 md:w-64 relative mx-auto">
             <Image
@@ -81,50 +81,110 @@ export default function Hero() {
           <div className="text-center font-bold text-xl md:text-4xl">
             Stuff I Have Done
           </div>
-          <div className="text-xs md:text-lg py-10 md:py-20">
-            <p className="text-center px-5">
-              Here are some cool website projects I have created using PHP and
-              JavaScript. Some of them use CodeIgniter and NextJS frameworks.
-            </p>
-            <div className="p-10">
-              <div className="text-xs md:text-lg py-10 md:py-20 px-10 md:grid md:grid-cols-2 grid-cols-none block bg-gray-900 rounded-lg border-4 border-gray-500">
-                <div className="relative mx-auto">
-                  <Image
-                    src={bahan}
-                    alt="Meatball ingridients stock CRUD System"
-                  />
+          <div className="text-xs md:text-lg p-10">
+            {/* START OF CAROUSEL */}
+            <div className="carousel w-full md:w-1/2 text-center mx-auto">
+              <div id="item1" className="carousel-item w-full">
+                <div className="pt-24">
+                  <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl">
+                    <p className="p-5">
+                      <div className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center">
+                        CRUD Bakso
+                      </div>
+                      A CRUD system to save the data of meatball ingredients
+                      stock. This app using CodeIgniter framework and also has
+                      been equipped with a login system.
+                    </p>
+                    <div className="relative mx-auto p-5">
+                      <Image
+                        src={bahan}
+                        alt="Meatball ingredients stock CRUD System"
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <p className="p-5 md:p-10 text-center">
-                  <h5 className="md:text-2xl text-xl font-bold mb-5 md:mt-0 mt-5 text-center">
-                    CRUD Bakso
-                  </h5>
-                  A CRUD systems to save the data of meatball ingredients stock.
-                  This app using CodeIgniter framework and also has been
-                  equipped with a login system.
-                  <br />
-                  <a
-                    href="#"
-                    className="mt-5 inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >
-                    Read more
-                    <svg
-                      aria-hidden="true"
-                      className="ml-2 -mr-1 w-4 h-4"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </a>
-                </p>
+              </div>
+              <div id="item2" className="carousel-item w-full">
+                <div className="pt-24">
+                  <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl">
+                    <p className="p-5">
+                      <div className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center">
+                        CRUD Bakso
+                      </div>
+                      A CRUD system to save the data of meatball ingredients
+                      stock. This app using CodeIgniter framework and also has
+                      been equipped with a login system.
+                    </p>
+                    <div className="relative mx-auto p-5">
+                      <Image
+                        src={bahan}
+                        alt="Meatball ingredients stock CRUD System"
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="item3" className="carousel-item w-full">
+                <div className="pt-24">
+                  <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl">
+                    <p className="p-5">
+                      <div className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center">
+                        CRUD Bakso
+                      </div>
+                      A CRUD system to save the data of meatball ingredients
+                      stock. This app using CodeIgniter framework and also has
+                      been equipped with a login system.
+                    </p>
+                    <div className="relative mx-auto p-5">
+                      <Image
+                        src={bahan}
+                        alt="Meatball ingredients stock CRUD System"
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="item4" className="carousel-item w-full">
+                <div className="pt-24">
+                  <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl">
+                    <p className="p-5">
+                      <div className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center">
+                        CRUD Bakso
+                      </div>
+                      A CRUD system to save the data of meatball ingredients
+                      stock. This app using CodeIgniter framework and also has
+                      been equipped with a login system.
+                    </p>
+                    <div className="relative mx-auto p-5">
+                      <Image
+                        src={bahan}
+                        alt="Meatball ingredients stock CRUD System"
+                        className="rounded-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div className="flex justify-center w-full py-2 gap-2">
+              <a href="#item1" className="btn btn-xs">
+                1
+              </a>
+              <a href="#item2" className="btn btn-xs">
+                2
+              </a>
+              <a href="#item3" className="btn btn-xs">
+                3
+              </a>
+              <a href="#item4" className="btn btn-xs">
+                4
+              </a>
+            </div>
           </div>
+          {/* END OF CAROUSEL */}
         </div>
       </section>
       {/* SVG WAVE */}
