@@ -1,7 +1,7 @@
 import Hero from "./hero";
 export default function Contents() {
   return (
-    <div className="drawer">
+    <div className="drawer overflow-x-hidden">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
