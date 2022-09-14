@@ -5,7 +5,7 @@ import bahan from "../../public/projects/bahan/bahan.png";
 
 export default function Hero() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <section id="home">
         <div className="bg-gray-900 text-white pt-14 w-screen h-full">
           <br />
