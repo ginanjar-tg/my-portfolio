@@ -7,24 +7,24 @@ import Wave2 from "./wave2";
 
 export default function Contents() {
   return (
-    <div className="overflow-x-hidden">
+    <div classNameName="overflow-x-hidden">
       <section id="home">
-        <div className="bg-gray-900 text-white pt-14 w-screen h-full">
+        <div classNameName="bg-gray-900 text-white pt-14 w-screen h-full">
           <br />
-          <div className="h-32 w-32 md:h-64 md:w-64 relative mx-auto">
+          <div classNameName="h-32 w-32 md:h-64 md:w-64 relative mx-auto">
             <Image
               src={ginanjarPic}
               alt="Ginanjar's Photo"
               layout="fill"
               objectFit="cover"
-              className="rounded-full"
+              classNameName="rounded-full"
             />
           </div>
           <br />
-          <div className="font-poppins text-lg md:text-3xl text-white text-center font-bold p-2 md:p-4">
+          <div classNameName="font-poppins text-lg md:text-3xl text-white text-center font-bold p-2 md:p-4">
             <h1>Ginanjar Tubagus Gumilar</h1>
           </div>
-          <div className="font-poppins md:text-lg text-xs text-white text-center">
+          <div classNameName="font-poppins md:text-lg text-xs text-white text-center">
             <p>College Student | Website Developer</p>
             <br />
           </div>
@@ -32,11 +32,11 @@ export default function Contents() {
       </section>
       <section id="about">
         <Wave1 />
-        <div className="bg-white h-full font-poppins text-gray-800 -mt-5">
-          <div className="text-center font-bold text-xl md:text-4xl">
+        <div classNameName="bg-white h-full font-poppins text-gray-800 -mt-5">
+          <div classNameName="text-center font-bold text-xl md:text-4xl">
             Let Me Introduce Myself
           </div>
-          <div className="text-xs md:text-lg py-10 md:py-20 px-10 md:grid md:grid-cols-2 grid-cols-none mx-auto place-content-center place-items-center">
+          <div classNameName="text-xs md:text-lg py-10 md:py-20 px-10 md:grid md:grid-cols-2 grid-cols-none mx-auto place-content-center place-items-center">
             <p>
               Hi There! 👋
               <br />
@@ -50,7 +50,7 @@ export default function Contents() {
               Whenever possible, I also apply my passion for developing products
               with Modern JavaScript Library and Frameworks like NextJS.
             </p>
-            <div className="h-32 w-32 md:h-64 md:w-64 relative mx-auto md:block hidden">
+            <div classNameName="h-32 w-32 md:h-64 md:w-64 relative mx-auto md:block hidden">
               <Image
                 src={pixelPic}
                 alt="Ginanjar's Pixel Photo"
@@ -63,10 +63,10 @@ export default function Contents() {
       </section>
       <Wave2 />
       <section id="projects">
-        <div className=" py-10 bg-gray-900 h-full font-poppins text-white -mt-5">
+        <div classNameName=" py-10 bg-gray-900 h-full font-poppins text-white -mt-5">
           <br />
-          <div className="text-xs md:text-lg p-10">
-            <div className="text-center font-bold text-xl md:text-4xl py-10">
+          <div classNameName="text-xs md:text-lg p-10">
+            <div classNameName="text-center font-bold text-xl md:text-4xl py-10">
               Stuff I Have Done
             </div>
             <br />
@@ -76,21 +76,23 @@ export default function Contents() {
       </section>
       <Wave1 />
       <section id="resume">
-        <div className="text-center bg-white h-full font-poppins text-gray-800 -mt-5">
+        <div classNameName="text-center bg-white h-full font-poppins text-gray-800 -mt-5">
           <br />
-          <div className="py-20">
-            <div className="font-bold text-xl md:text-4xl">More About Me</div>
-            <div className="text-xs md:text-lg py-10 md:py-20">
+          <div classNameName="py-20">
+            <div classNameName="font-bold text-xl md:text-4xl">
+              More About Me
+            </div>
+            <div classNameName="text-xs md:text-lg py-10 md:py-20">
               <p>
                 Here is my CV to know more about me. Like the old saying… <br />
                 <br />
-                <div className="shadow-xl w-full md:w-1/2 h-full p-5 bg-white rounded-lg text-lg md:text-2xl font-semibold m-auto text-center">
+                <div classNameName="shadow-xl w-full md:w-1/2 h-full p-5 bg-white rounded-lg text-lg md:text-2xl font-semibold m-auto text-center">
                   <i> &quot; Out of sight, out of mind &quot;</i>
                 </div>
                 <br />
                 <a
                   href="https://ginanjartg.me/resume/cv.pdf"
-                  className="font-bold mt-10 inline-flex items-center p-3 text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  classNameName="font-bold mt-10 inline-flex items-center p-3 text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Download My CV
                 </a>
@@ -101,13 +103,13 @@ export default function Contents() {
       </section>
       <section id="contact">
         <Wave2 />
-        <div className="bg-gray-900 h-full font-poppins text-white -mt-5 py-14">
+        <div classNameName="bg-gray-900 h-full font-poppins text-white -mt-5 py-14">
           <br />
-          <div className="text-center font-bold text-xl md:text-4xl">
+          <div classNameName="text-center font-bold text-xl md:text-4xl">
             Let&apos;s Work Together!
           </div>
-          <div className="text-xs md:text-lg py-10 md:py-20">
-            <p className="text-center">
+          <div classNameName="text-xs md:text-lg py-10 md:py-20">
+            <p classNameName="text-center">
               Keep in touch with me for any kind of project or just to say hi.
               <br />
               📧 Email :{" "}
@@ -127,7 +129,7 @@ export default function Contents() {
         </div>
       </section>
 
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+      <footer classNameName="footer footer-center p-4 bg-base-300 text-base-content">
         <div>
           <p>Copyright © Ginanjar Tubagus Gumilar</p>
         </div>

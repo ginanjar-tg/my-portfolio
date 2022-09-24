@@ -46,8 +46,8 @@ export default function Home() {
     <div ref={el}>
       {!loadingState ? setLoadingState("start") : null}
       {loadingState === "start" ? (
-        <div className="flex h-screen w-screen">
-          <div className="m-auto">
+        <div classNameName="flex h-screen w-screen">
+          <div classNameName="m-auto">
             <Image src={loading} alt="loading..." />
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
           <Head>
             <title>GinanjarTG Portfolio</title>
           </Head>
-          <div className="bg-gray-900">
+          <div classNameName="bg-gray-900">
             <Contents />
           </div>
         </>

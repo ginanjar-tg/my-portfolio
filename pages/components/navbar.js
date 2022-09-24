@@ -1,18 +1,21 @@
 import Contents from "./contents";
 export default function Navbar() {
   return (
-    <div className="drawer overflow-x-hidden">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col">
+    <div classNameName="drawer overflow-x-hidden">
+      <input id="my-drawer-3" type="checkbox" classNameName="drawer-toggle" />
+      <div classNameName="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
-        <div className="w-full navbar bg-gray-900 text-white fixed z-30">
-          <div className="flex-none lg:hidden">
-            <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+        <div classNameName="w-full navbar bg-gray-900 text-white fixed z-30">
+          <div classNameName="flex-none lg:hidden">
+            <label
+              htmlFor="my-drawer-3"
+              classNameName="btn btn-square btn-ghost"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                className="inline-block w-6 h-6 stroke-current"
+                classNameName="inline-block w-6 h-6 stroke-current"
               >
                 <path
                   strokeLinecap="round"
@@ -23,11 +26,11 @@ export default function Navbar() {
               </svg>
             </label>
           </div>
-          <a className="flex-1 px-2 mx-2 font-bold text-xl" href="#home">
+          <a classNameName="flex-1 px-2 mx-2 font-bold text-xl" href="#home">
             GinanjarTG Portfolio
           </a>
-          <div className="flex-none hidden lg:block font-bold">
-            <ul className="menu menu-horizontal">
+          <div classNameName="flex-none hidden lg:block font-bold">
+            <ul classNameName="menu menu-horizontal">
               {/* <!-- Navbar menu content here --> */}
               <li>
                 <a href="#home">Home</a>
@@ -50,9 +53,9 @@ export default function Navbar() {
         {/* <!-- Page content here --> */}
         <Contents />
       </div>
-      <div className="drawer-side">
-        <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-        <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 font-bold">
+      <div classNameName="drawer-side">
+        <label htmlFor="my-drawer-3" classNameName="drawer-overlay"></label>
+        <ul classNameName="menu p-4 overflow-y-auto w-80 bg-base-100 font-bold">
           {/* <!-- Sidebar content here --> */}
           <li>
             <a href="#home">Home</a>
