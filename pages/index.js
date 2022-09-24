@@ -1,9 +1,10 @@
-import Contents from "./components/contents.js";
+import Contents from "./components/navbar.js";
 import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import Head from "next/head.js";
 import gsap from "gsap";
 import loading from "../public/teio.gif";
 import Image from "next/image";
+import Navbar from "./components/navbar.js";
 
 // fungsi untuk fetch data
 function fetchData() {
@@ -12,7 +13,7 @@ function fetchData() {
       resolve([
         <>
           <Head />
-          <Contents />
+          <Navbar />
         </>,
       ]);
     }, 3000);
