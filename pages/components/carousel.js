@@ -2,7 +2,6 @@
 import React from "react";
 import Bahan from "../../public/projects/bahan/bahan.png";
 import ImageZoom from "react-image-zooom";
-import "tw-elements";
 
 const Carousel = () => {
   return (
