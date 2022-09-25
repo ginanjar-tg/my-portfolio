@@ -1,7 +1,7 @@
+// this carousel will be used in contents.js
 import React from "react";
-import Image from "next/image";
 import Bahan from "../../public/projects/bahan/bahan.png";
-import Zoom from "next-image-zoom";
+import ImageZoom from "react-image-zooom";
 import "tw-elements";
 
 const Carousel = () => {
@@ -27,7 +27,7 @@ const Carousel = () => {
                 with a login system.
               </p>
               <div className="relative mx-auto p-5">
-                <Zoom src={Bahan} layout={"responsive"} />
+                <ImageZoom src={Bahan} alt="CRUD Bahan Baku Bakso" zoom="200" />
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Carousel = () => {
                 with a login system.
               </p>
               <div className="relative mx-auto p-5">
-                <Zoom src={Bahan} layout={"responsive"} />
+                <ImageZoom src={Bahan} alt="CRUD Bahan Baku Bakso" zoom="200" />
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ const Carousel = () => {
                 with a login system.
               </p>
               <div className="relative mx-auto p-5">
-                <Zoom src={Bahan} layout={"responsive"} />
+                <ImageZoom src={Bahan} alt="CRUD Bahan Baku Bakso" zoom="200" />
               </div>
             </div>
           </div>

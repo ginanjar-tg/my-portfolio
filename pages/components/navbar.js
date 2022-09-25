@@ -1,3 +1,4 @@
+// this navbar will be called in index.js
 import Contents from "./contents";
 export default function Navbar() {
   return (

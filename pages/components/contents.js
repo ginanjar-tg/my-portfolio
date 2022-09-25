@@ -1,3 +1,4 @@
+// this contents will be called in navbar.js
 import Image from "next/image";
 import ginanjarPic from "../../public/ginanjar.png";
 import pixelPic from "../../public/pixel.png";
