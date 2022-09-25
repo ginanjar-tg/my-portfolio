@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import bahan from "../../public/projects/bahan/bahan.png";
+import Bahan from "../../public/projects/bahan/bahan.png";
 import Zoom from "next-image-zoom";
+import "tw-elements";
 
 const Carousel = () => {
   return (
@@ -10,27 +11,62 @@ const Carousel = () => {
       className="carousel slide relative"
       data-bs-ride="carousel"
     >
-      <div className="carousel-inner relative w-full overflow-hidden">
-        <div className="carousel-item active relative float-left w-full">
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
-            className="block w-full"
-            alt="Wild Landscape"
-          />
-        </div>
-        <div className="carousel-item relative float-left w-full">
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
-            className="block w-full"
-            alt="Camera"
-          />
-        </div>
-        <div className="carousel-item relative float-left w-full">
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
-            className="block w-full"
-            alt="Exotic Fruits"
-          />
+      <div className="w-full flex">
+        <div className="carousel-inner relative w-1/2 overflow-hidden tex-center m-auto">
+          <div className="carousel-item active relative float-left w-full">
+            <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl bg-gray-900">
+              <p className="p-5">
+                <div
+                  id="item1"
+                  className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center"
+                >
+                  Sistem Manajemen Bahan Baku Bakso
+                </div>
+                A CRUD system to save the data of meatball ingredients stock.
+                This app using CodeIgniter framework and also has been equipped
+                with a login system.
+              </p>
+              <div className="relative mx-auto p-5">
+                <Zoom src={Bahan} layout={"responsive"} />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item relative float-left w-full">
+            <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl bg-gray-900">
+              <p className="p-5">
+                <div
+                  id="item1"
+                  className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center"
+                >
+                  Sistem Manajemen Alamat
+                </div>
+                A CRUD system to save the data of meatball ingredients stock.
+                This app using CodeIgniter framework and also has been equipped
+                with a login system.
+              </p>
+              <div className="relative mx-auto p-5">
+                <Zoom src={Bahan} layout={"responsive"} />
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item relative float-left w-full">
+            <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl bg-gray-900">
+              <p className="p-5">
+                <div
+                  id="item1"
+                  className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center"
+                >
+                  Sistem Manajemen Kucing
+                </div>
+                A CRUD system to save the data of meatball ingredients stock.
+                This app using CodeIgniter framework and also has been equipped
+                with a login system.
+              </p>
+              <div className="relative mx-auto p-5">
+                <Zoom src={Bahan} layout={"responsive"} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <button

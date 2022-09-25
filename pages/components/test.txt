@@ -15,7 +15,7 @@
                     been equipped with a login system.
                   </p>
                   <div className="relative mx-auto p-5">
-                    <Zoom src={bahan} layout={"responsive"} />
+                    <Zoom src={Bahan} layout={"responsive"} />
                   </div>
                 </div>
               </div>
