@@ -10,6 +10,7 @@ const Carousel = () => {
       id="carouselExampleControls"
       className="carousel slide relative"
       data-bs-ride="carousel"
+data-bs-interval="false"
     >
       <div className="w-full flex">
         <div className="carousel-inner relative w-full md:w-1/2 overflow-hidden tex-center m-auto">
