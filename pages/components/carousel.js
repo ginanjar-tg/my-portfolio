@@ -31,7 +31,7 @@ const Carousel = () => {
                 <a
                   href="https://isekaistore.vercel.app/"
                   target="_blank"
-rel="noreferrer"
+                  rel="noreferrer"
                   className="text-blue-500"
                 >
                   here
@@ -88,7 +88,7 @@ rel="noreferrer"
                 <a
                   href="https://mapbox.ginanjartg.me/"
                   target="_blank"
-rel="noreferrer"
+                  rel="noreferrer"
                   className="text-blue-500"
                 >
                   here
