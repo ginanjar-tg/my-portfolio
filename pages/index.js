@@ -49,6 +49,10 @@ export default function Home() {
         <div className="flex h-screen w-screen">
           <div className="m-auto">
             <Image src={loading} alt="loading..." />
+        
+                        <div className="text-center text-white font-semibold italic py-5 text-2xl">
+                            Wait a moment . . .
+                        </div>
           </div>
         </div>
       ) : null}
