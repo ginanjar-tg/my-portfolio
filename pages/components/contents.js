@@ -47,7 +47,7 @@ export default function Contents() {
               My field of Interests are building new Web Technologies and
               Products. <br />
               I am quite confident with my PHP skills, both PHP Native or PHP
-              frameworks like CodeIgniter. <br />
+              frameworks. <br />
               Whenever possible, I also apply my passion for developing products
               with Modern JavaScript Library and Frameworks like NextJS.
             </p>
