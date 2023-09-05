@@ -79,7 +79,7 @@ const Carousel = () => {
                   id="item1"
                   className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center"
                 >
-                  Map-Click Location Management System
+                  Mapbox Location Management System
                 </div>
                 Made with PHP Native and ReactJS, this app is a location
                 management system that uses Mapbox API to display the location.
