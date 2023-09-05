@@ -83,17 +83,7 @@ const Carousel = () => {
                 </div>
                 Made with PHP Native and ReactJS, this app is a location
                 management system that uses Mapbox API to display the location.
-                This app also has a feature to detect weather. You can check the
-                website{" "}
-                <a
-                  href="https://mapbox.ginanjartg.me/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500"
-                >
-                  here
-                </a>
-                .
+                This app also has a feature to detect weather.
               </p>
               <div className="relative mx-auto p-5">
                 <TransformWrapper initialScale={1}>
