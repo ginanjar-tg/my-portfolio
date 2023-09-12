@@ -121,8 +121,6 @@ export default function Contents() {
                 Ginanjar Tubagus Gumilar
               </a>
               <br />
-              🌐 Website : <a href="https://ginanjartg.me">ginanjartg.me</a>
-              <br />
             </p>
           </div>
         </div>
