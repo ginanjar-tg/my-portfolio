@@ -3,6 +3,7 @@ import React from "react";
 import Bahan from "../../public/projects/bahan/bahan.png";
 import Location from "../../public/projects/location/location.png";
 import Isekai from "../../public/projects/isekai/isekaistore.png";
+import Jajaneling from "../../public/projects/jajaneling/jajaneling.png";
 import Image from "next/image";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
@@ -17,6 +18,63 @@ const Carousel = () => {
       <div className="w-full flex">
         <div className="carousel-inner relative w-full md:w-1/2 overflow-hidden tex-center m-auto">
           <div className="carousel-item active relative float-left w-full">
+            <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl bg-gray-900 text-center">
+              <p className="p-5">
+                <div
+                  id="item1"
+                  className="text-xl font-bold mb-5 md:mt-0 mt-5 text-center"
+                >
+                  Jajaneling
+                </div>
+                Made with PHP Native, this website is an official landing page
+                of Jajaneling, which is a web that would make the transaction
+                between street vendors and buyers so much easier than before.
+                You can check the website{" "}
+                <a
+                  href="https://jajaneling.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500"
+                >
+                  here
+                </a>
+                .
+              </p>
+              <div className="relative mx-auto p-5">
+                <TransformWrapper initialScale={1}>
+                  {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
+                    <React.Fragment>
+                      <TransformComponent>
+                        <Image src={Jajaneling} className="rounded-lg" />
+                      </TransformComponent>
+
+                      <div className="tools space-x-3 text-center py-3 text-sm">
+                        <button
+                          onClick={() => zoomIn()}
+                          className="btn-primary bg-blue-500 hover:bg-blue-700 p-2 rounded"
+                        >
+                          Zoom In
+                        </button>
+                        <button
+                          onClick={() => zoomOut()}
+                          className="btn-primary bg-blue-500 hover:bg-blue-700 p-2 rounded"
+                        >
+                          Zoom Out
+                        </button>
+                        <button
+                          onClick={() => resetTransform()}
+                          className="btn-primary bg-blue-500 hover:bg-blue-700 p-2 rounded"
+                        >
+                          Reset
+                        </button>
+                      </div>
+                    </React.Fragment>
+                  )}
+                </TransformWrapper>
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item relative float-left w-full">
             <div className="text-xs md:text-base block border-4 border-gray-500 rounded-xl bg-gray-900 text-center">
               <p className="p-5">
                 <div
