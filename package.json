@@ -23,7 +23,7 @@
     "daisyui": "^2.31.0",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.0",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.31",
     "react-image-zooom": "^1.0.4",
     "tailwindcss": "^3.1.4",
     "tw-elements": "^1.0.0-alpha12"
