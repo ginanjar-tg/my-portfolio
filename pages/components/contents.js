@@ -26,7 +26,7 @@ export default function Contents() {
             <h1>Ginanjar Tubagus Gumilar</h1>
           </div>
           <div className="font-poppins md:text-lg text-xs text-white text-center">
-            <p>College Student | Website Developer</p>
+            <p>Full Stack Web Developer</p>
             <br />
           </div>
         </div>
