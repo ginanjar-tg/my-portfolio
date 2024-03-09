@@ -29,16 +29,6 @@ const Carousel = () => {
                 Made with PHP Native, this website is an official landing page
                 of Jajaneling, which is a web that would make the transaction
                 between street vendors and buyers so much easier than before.
-                You can check the website{" "}
-                <a
-                  href="https://jajaneling.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-500"
-                >
-                  here
-                </a>
-                .
               </p>
               <div className="relative mx-auto p-5">
                 <TransformWrapper initialScale={1}>
