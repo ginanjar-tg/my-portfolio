@@ -42,12 +42,10 @@ export default function Contents() {
               Hi There! 👋
               <br />
               <br />
-              I fell in love with programming and I have at least learnt
-              something, I think... <br />
               My field of Interests are building new Web Technologies and
               Products. <br />
               I am quite confident with my PHP skills, both PHP Native or PHP
-              frameworks. <br />
+              framework like Laravel. <br />
               Whenever possible, I also apply my passion for developing products
               with Modern JavaScript Library and Frameworks like NextJS.
             </p>
