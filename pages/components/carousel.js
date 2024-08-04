@@ -27,7 +27,7 @@ const Carousel = () => {
                   Jajaneling
                 </div>
                 Made with PHP Native, this website is an official landing page
-                of Jajaneling, which is a web that would make the transaction
+                of Jajaneling, which is a website that would make the transaction
                 between street vendors and buyers so much easier than before.
               </p>
               <div className="relative mx-auto p-5">
@@ -82,7 +82,7 @@ const Carousel = () => {
                   rel="noreferrer"
                   className="text-blue-500"
                 >
-                  here
+                  HERE
                 </a>
                 .
               </p>
