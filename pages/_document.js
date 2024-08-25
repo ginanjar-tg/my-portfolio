@@ -1,12 +1,16 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
 
-// import 'tw-elements';
-
 export default function Document() {
   return (
     <Html>
-      <Head />
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+          rel="stylesheet"
+        />
+        {/* Add other custom fonts or global styles here if needed */}
+      </Head>
       <body>
         <Main />
         <NextScript />

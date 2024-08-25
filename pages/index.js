@@ -76,7 +76,6 @@ export default function Home() {
         <>
           <Head>
             <title>GinanjarTG Portfolio</title>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
           </Head>
           <div className="bg-[#141C2B]">
             <Navbar />

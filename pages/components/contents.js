@@ -17,7 +17,7 @@ export default function Contents() {
           <div className="h-40 w-40 md:h-64 md:w-64 relative mx-auto mb-8">
             <Image
               src={ginanjarPic}
-              alt="Ginanjar's Photo"
+              alt="Ginanjar&apos;s Photo"
               layout="fill"
               objectFit="cover"
               className="rounded-full shadow-lg"
@@ -46,14 +46,14 @@ export default function Contents() {
             <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto">
               <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
                 <p className="text-lg leading-relaxed text-gray-700 text-center md:text-left">
-                  Hi there! I'm a full-stack web developer with hands-on experience in Laravel and a good grasp of the development process, from coding to deployment. I enjoy working on projects and continuously improving my skills to deliver solid and dependable solutions.
+                  Hi there! I&apos;m a full-stack web developer with hands-on experience in Laravel and a good grasp of the development process, from coding to deployment. I enjoy working on projects and continuously improving my skills to deliver solid and dependable solutions.
                 </p>
               </div>
               <div className="md:w-1/2 flex justify-center">
                 <div className="h-64 w-64 relative">
                   <Image
                     src={pixelPic}
-                    alt="Ginanjar's Pixel Photo"
+                    alt="Ginanjar&apos;s Pixel Photo"
                     layout="fill"
                     objectFit="cover"
                     className="rounded-lg shadow-xl"
@@ -94,7 +94,7 @@ export default function Contents() {
             </p>
             <div className="shadow-xl w-full md:w-1/2 mx-auto p-6 bg-white rounded-lg mb-8">
               <p className="text-2xl font-semibold italic text-gray-800">
-                "Out of sight, out of mind"
+                &quot;Out of sight, out of mind&quot;
               </p>
             </div>
             <a
@@ -118,7 +118,7 @@ export default function Contents() {
             className="text-center"
           >
             <h2 className="font-bold text-3xl md:text-5xl mb-16 text-white">
-              Let's Work Together!
+              Let&apos;s Work Together!
             </h2>
             <p className="text-lg mb-8 text-gray-300">
               Keep in touch with me for any kind of project or just to say hi.
