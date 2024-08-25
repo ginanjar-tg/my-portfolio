@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       ))}
-      <style jsx>{`
+      <style>{`
         .code-icon {
           font-size: 64px;
           color: white;
