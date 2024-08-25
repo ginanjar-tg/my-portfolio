@@ -1,1 +1,1 @@
-This is My Simple Portfolio, built with NextJS and Tailwindcss
+This is My Portfolio, built with NextJS and Tailwindcss
