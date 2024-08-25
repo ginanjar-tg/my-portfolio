@@ -1,6 +1,30 @@
-// this navbar will be called in index.js
+import { useEffect } from 'react';
 import Contents from "./contents";
+
 export default function Navbar() {
+  useEffect(() => {
+    const scrollToSection = (e, sectionId) => {
+      e.preventDefault();
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+      // Close the drawer if it's open (for mobile)
+      document.getElementById('my-drawer-3').checked = false;
+    };
+
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => scrollToSection(e, link.getAttribute('href').slice(1)));
+    });
+
+    return () => {
+      links.forEach(link => {
+        link.removeEventListener('click', (e) => scrollToSection(e, link.getAttribute('href').slice(1)));
+      });
+    };
+  }, []);
+
   return (
     <div className="drawer overflow-x-hidden">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -30,21 +54,11 @@ export default function Navbar() {
           <div className="flex-none hidden lg:block font-bold">
             <ul className="menu menu-horizontal">
               {/* <!-- Navbar menu content here --> */}
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#resume">Resume</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -55,21 +69,11 @@ export default function Navbar() {
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-80 bg-base-100 font-bold">
           {/* <!-- Sidebar content here --> */}
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>

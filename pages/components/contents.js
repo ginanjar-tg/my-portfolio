@@ -1,132 +1,140 @@
-// this contents will be called in navbar.js
 import Image from "next/image";
 import ginanjarPic from "../../public/ginanjar.png";
 import pixelPic from "../../public/pixel.png";
 import Carousel from "./carousel";
-import Wave1 from "./wave1";
-import Wave2 from "./wave2";
+import { motion } from "framer-motion";
 
 export default function Contents() {
   return (
     <div className="overflow-x-hidden">
-      <section id="home">
-        <div className="bg-gray-900 text-white pt-14 w-screen h-full">
-          <br />
-          <div className="h-32 w-32 md:h-64 md:w-64 relative mx-auto">
+      <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center"
+        >
+          <div className="h-40 w-40 md:h-64 md:w-64 relative mx-auto mb-8">
             <Image
               src={ginanjarPic}
               alt="Ginanjar's Photo"
               layout="fill"
               objectFit="cover"
-              className="rounded-full"
+              className="rounded-full shadow-lg"
             />
           </div>
-          <br />
-          <div className="font-poppins text-lg md:text-3xl text-white text-center font-bold p-2 md:p-4">
-            <h1>Ginanjar Tubagus Gumilar</h1>
-          </div>
-          <div className="font-poppins md:text-lg text-xs text-white text-center">
-            <p>Full Stack Web Developer</p>
-            <br />
-          </div>
-        </div>
+          <h1 className="font-poppins text-3xl md:text-5xl text-white font-bold mb-4">
+            Ginanjar Tubagus Gumilar
+          </h1>
+          <p className="font-poppins text-xl md:text-2xl text-gray-300">
+            Full Stack Web Developer
+          </p>
+        </motion.div>
       </section>
-      <section id="about">
-        <Wave1 />
-        <div className="bg-white h-full font-poppins text-gray-800 -mt-5">
-          <div className="text-center font-bold text-xl md:text-4xl">
-            Let Me Introduce Myself
-          </div>
-          <div className="text-xs md:text-lg py-10 md:py-20 px-10 md:grid md:grid-cols-2 grid-cols-none mx-auto place-content-center place-items-center">
-            <p>
-              Hi There! 👋
-              <br />
-              <br />
-              My field of Interests are building new Web Technologies and
-              Products. <br />
-              I am quite confident with my PHP skills, both PHP Native or PHP
-              framework like Laravel. <br />
-              Whenever possible, I also apply my passion for developing products
-              with Modern JavaScript Library and Frameworks like NextJS.
-            </p>
-            <div className="h-32 w-32 md:h-64 md:w-64 relative mx-auto md:block hidden">
-              <Image
-                src={pixelPic}
-                alt="Ginanjar's Pixel Photo"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <Wave2 />
-      <section id="projects">
-        <div className=" py-10 bg-gray-900 h-full font-poppins text-white -mt-5">
-          <br />
-          <div className="text-xs md:text-lg p-10">
-            <div className="text-center font-bold text-xl md:text-4xl py-10">
-              Stuff I Have Done
-            </div>
-            <br />
-            <Carousel />
-          </div>
-        </div>
-      </section>
-      <Wave1 />
-      <section id="resume">
-        <div className="text-center bg-white h-full font-poppins text-gray-800 -mt-5">
-          <br />
-          <div className="py-20">
-            <div className="font-bold text-xl md:text-4xl">More About Me</div>
-            <div className="text-xs md:text-lg py-10 md:py-20">
-              <p>
-                Here is my CV to know more about me. Like the old saying… <br />
-                <br />
-                <div className="shadow-xl w-full md:w-1/2 h-full p-5 bg-white rounded-lg text-lg md:text-2xl font-semibold m-auto text-center">
-                  <i> &quot; Out of sight, out of mind &quot;</i>
+
+      <section id="about" className="min-h-screen flex items-center bg-gray-100 pt-16">
+        <div className="container mx-auto px-4 py-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col items-center"
+          >
+            <h2 className="font-bold text-3xl md:text-5xl mb-16 text-gray-800 text-center">
+              Let Me Introduce Myself
+            </h2>
+            <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto">
+              <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
+                <p className="text-lg leading-relaxed text-gray-700 text-center md:text-left">
+                  Hi there! I'm a full-stack web developer with hands-on experience in Laravel and a good grasp of the development process, from coding to deployment. I enjoy working on projects and continuously improving my skills to deliver solid and dependable solutions.
+                </p>
+              </div>
+              <div className="md:w-1/2 flex justify-center">
+                <div className="h-64 w-64 relative">
+                  <Image
+                    src={pixelPic}
+                    alt="Ginanjar's Pixel Photo"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg shadow-xl"
+                  />
                 </div>
-                <br />
-                <a
-                  href="https://drive.google.com/file/d/19KIsczcFB520sU-MhbEdTOHj9xk4LNjs/view?usp=sharing"
-                  className="font-bold mt-10 inline-flex items-center p-3 text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Download My CV
-                </a>
-              </p>
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
-      <section id="contact">
-        <Wave2 />
-        <div className="bg-gray-900 h-full font-poppins text-white -mt-5 py-14">
-          <br />
-          <div className="text-center font-bold text-xl md:text-4xl">
-            Let&apos;s Work Together!
-          </div>
-          <div className="text-xs md:text-lg py-10 md:py-20">
-            <p className="text-center">
-              Keep in touch with me for any kind of project or just to say hi.
-              <br />
-              📧 Email :{" "}
-              <a href="mailto:ginanjar0822@gmail.com">ginanjar0822@gmail.com</a>
-              <br />
-              📞 Telephone : +62 813-6135-4486
-              <br />
-              👨‍💼 LinkedIn :{" "}
-              <a href="https://www.linkedin.com/in/ginanjar-tubagus-gumilar-a4638b1b6/">
-                Ginanjar Tubagus Gumilar
-              </a>
-              <br />
-            </p>
-          </div>
+      
+      <section id="projects" className="min-h-screen flex items-center bg-gray-900 pt-16">
+        <div className="container mx-auto px-4 py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-center font-bold text-3xl md:text-5xl mb-16 text-white">
+              Stuff I Have Done
+            </h2>
+            <Carousel />
+          </motion.div>
         </div>
       </section>
 
-      <footer className="footer footer-center p-4 bg-base-300 text-base-content">
-        <div>
-          <p>Copyright © Ginanjar Tubagus Gumilar</p>
+      <section id="resume" className="min-h-screen flex items-center bg-gray-100 pt-16">
+        <div className="container mx-auto px-4 py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h2 className="font-bold text-3xl md:text-5xl mb-16 text-gray-800">More About Me</h2>
+            <p className="text-lg mb-8 text-gray-700">
+              Here is my CV to know more about me. Like the old saying…
+            </p>
+            <div className="shadow-xl w-full md:w-1/2 mx-auto p-6 bg-white rounded-lg mb-8">
+              <p className="text-2xl font-semibold italic text-gray-800">
+                "Out of sight, out of mind"
+              </p>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/19KIsczcFB520sU-MhbEdTOHj9xk4LNjs/view?usp=sharing"
+              className="inline-block font-bold px-8 py-3 text-lg text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download My CV
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      <section id="contact" className="min-h-screen flex items-center bg-gray-900 pt-16">
+        <div className="container mx-auto px-4 py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h2 className="font-bold text-3xl md:text-5xl mb-16 text-white">
+              Let's Work Together!
+            </h2>
+            <p className="text-lg mb-8 text-gray-300">
+              Keep in touch with me for any kind of project or just to say hi.
+            </p>
+            <div className="space-y-4 text-gray-300">
+              <p>📧 Email: <a href="mailto:ginanjar0822@gmail.com" className="underline hover:text-blue-300">ginanjar0822@gmail.com</a></p>
+              <p>📞 Telephone: +62 813-6135-4486</p>
+              <p>👨‍💼 LinkedIn: <a href="https://www.linkedin.com/in/ginanjar-tubagus-gumilar-a4638b1b6/" className="underline hover:text-blue-300" target="_blank" rel="noopener noreferrer">Ginanjar Tubagus Gumilar</a></p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <footer className="bg-gray-800 text-white py-6">
+        <div className="container mx-auto px-4 text-center">
+          <p>Copyright © {new Date().getFullYear()} Ginanjar Tubagus Gumilar</p>
         </div>
       </footer>
     </div>
