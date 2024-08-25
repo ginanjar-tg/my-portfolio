@@ -72,15 +72,15 @@ export default function Home() {
           </div>
         </div>
       )}
-      {data.map(() => (
-        <>
+      {data.map((_, index) => (
+        <div key={index}>
           <Head>
             <title>GinanjarTG Portfolio</title>
           </Head>
           <div className="bg-[#141C2B]">
             <Navbar />
           </div>
-        </>
+        </div>
       ))}
       <style jsx>{`
         .code-icon {
