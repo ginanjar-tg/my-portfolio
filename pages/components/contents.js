@@ -46,7 +46,7 @@ export default function Contents() {
             <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto">
               <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
                 <p className="text-lg leading-relaxed text-gray-700 text-center md:text-left">
-                  I work on front-end and back-end development and manage deployments as well. I often laugh when updating my LinkedIn bio, considering whether to label myself as a full stack developer, a DevOps person, or maybe even Superman in disguise.
+                  I work on front-end and back-end development and manage deployments as well. I often laugh when updating my bio, considering whether to label myself as a full stack developer, a DevOps person, or maybe even Superman in disguise.
                 </p>
               </div>
               <div className="md:w-1/2 flex justify-center">
