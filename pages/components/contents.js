@@ -94,17 +94,27 @@ export default function Contents() {
             </p>
             <div className="shadow-xl w-full md:w-1/2 mx-auto p-6 bg-white rounded-lg mb-8">
               <p className="text-2xl font-semibold italic text-gray-800">
-                &quot;Out of sight, out of mind&quot;
+                "Out of sight, out of mind"
               </p>
             </div>
-            <a
-              href="https://drive.google.com/file/d/19KIsczcFB520sU-MhbEdTOHj9xk4LNjs/view?usp=sharing"
-              className="inline-block font-bold px-8 py-3 text-lg text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download My CV
-            </a>
+            <div className="flex justify-center space-x-4">
+              <a
+                href="https://drive.google.com/file/d/1-CY7sMMOxof11R0xqC_YscNovUYCbZer/view?usp=sharing"
+                className="inline-block font-bold px-8 py-3 text-lg text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download CV [ENG]
+              </a>
+              <a
+                href="https://drive.google.com/file/d/19KIsczcFB520sU-MhbEdTOHj9xk4LNjs/view?usp=sharing"
+                className="inline-block font-bold px-8 py-3 text-lg text-white bg-green-600 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Unduh CV [ID]
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
