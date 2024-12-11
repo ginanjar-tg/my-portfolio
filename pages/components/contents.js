@@ -99,7 +99,7 @@ export default function Contents() {
           </div>
           <div className="flex justify-center space-x-4">
             <a
-              href="https://drive.google.com/file/d/1Ma4qvXc4_8rE_5TlbfoOdPyK-V-w3YJW/view?usp=sharing"
+              href="https://drive.google.com/file/d/1MfUdZsTDGNjeHCIy8vI2rKkoUFjH-0lK/view?usp=sharing"
               className="inline-block font-bold px-8 py-3 text-lg text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
@@ -107,7 +107,7 @@ export default function Contents() {
               Download CV [ENG]
             </a>
             <a
-              href="https://drive.google.com/file/d/1tUI8wpZ5pCmYyGTqp6cs7VopmF8dhrHq/view?usp=sharing"
+              href="https://drive.google.com/file/d/1WGJW0NrLxkYl5jALcoY8Nfep3hEOzhv7/view?usp=sharing"
               className="inline-block font-bold px-8 py-3 text-lg text-white bg-green-600 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
