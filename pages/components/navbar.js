@@ -49,7 +49,7 @@ export default function Navbar() {
             </label>
           </div>
           <a className="flex-1 px-2 mx-2 font-bold text-xl" href="#home">
-            GinanjarTG Portfolio
+            GinanjarTG
           </a>
           <div className="flex-none hidden lg:block font-bold">
             <ul className="menu menu-horizontal">

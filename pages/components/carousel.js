@@ -3,31 +3,38 @@ import Bahan from "../../public/projects/bahan/bahan.png";
 import Location from "../../public/projects/location/location.png";
 import Isekai from "../../public/projects/isekai/isekaistore.png";
 import Jajaneling from "../../public/projects/jajaneling/jajaneling.png";
+import Maxxima from "../../public/projects/maxxima/maxxima.png";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const projects = [
+  
+  {
+    title: "IT Consultant Experience",
+    description: "Started as a full-stack developer, working with tools like Laravel, PostgreSQL, MySQL, Nginx, and Docker. Transitioned to WPF (C#) for desktop apps before moving to Python (Django) to develop AI-driven geolocation features.",
+    image: Maxxima,
+  },
   {
     title: "Jajaneling",
-    description: "Made with PHP Native, this website is an official landing page of Jajaneling, which is a website that would make the transaction between street vendors and buyers so much easier than before.",
+    description: "A platform built with PHP Native to simplify transactions between street vendors and buyers, enhancing local commerce efficiency.",
     image: Jajaneling,
   },
   {
     title: "Isekai Store Landing Page",
-    description: "Made with NextJS, this website is an official landing page of Isekai Store, which is a web marketplace that sells stuff from other world, or known as Isekai.",
+    description: "Developed using NextJS, this landing page showcases Isekai Store, a marketplace offering fantasy-inspired products.",
     image: Isekai,
     link: "https://isekaistore.vercel.app/",
   },
   {
     title: "Mapbox Location Management System",
-    description: "Made with PHP Native and ReactJS, this app is a location management system that uses Mapbox API to display the location. This app also has a feature to detect weather.",
+    description: "Built with PHP Native and ReactJS, this app uses the Mapbox API for geolocation display and includes a weather detection feature.",
     image: Location,
   },
   {
     title: "Meatball Ingredients Management System",
-    description: "A CRUD system to save the data of meatball ingredients stock. This app using CodeIgniter framework and also has been equipped with a login system.",
+    description: "A CRUD system built with CodeIgniter for managing meatball ingredients inventory, featuring a secure login system.",
     image: Bahan,
-  },
+  }
 ];
 
 const Carousel = () => {
@@ -62,7 +69,7 @@ const Carousel = () => {
           className="bg-gray-800 rounded-xl shadow-lg overflow-hidden"
         >
           <div className="md:flex">
-            <div className="md:w-1/2 p-6">
+            <div className="md:w-1/2 p-12">
               <h3 className="text-2xl font-bold text-white mb-4">{projects[currentIndex].title}</h3>
               <p className="text-gray-300 mb-4">{projects[currentIndex].description}</p>
               {projects[currentIndex].link && (
@@ -76,7 +83,7 @@ const Carousel = () => {
                 </a>
               )}
             </div>
-            <div className="md:w-1/2 p-6">
+            <div className="md:w-1/2 p-12">
               <div className="cursor-pointer" onClick={openModal}>
                 <Image 
                   src={projects[currentIndex].image} 
@@ -106,9 +113,7 @@ const Carousel = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? "bg-white" : "bg-gray-400"
-            }`}
+            className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-white" : "bg-gray-400"}`}
           />
         ))}
       </div>

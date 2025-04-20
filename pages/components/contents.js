@@ -27,7 +27,7 @@ export default function Contents() {
             Ginanjar Tubagus Gumilar
           </h1>
           <p className="font-poppins text-xl md:text-2xl text-gray-300">
-            Full Stack Web Developer
+            Full Stack Developer
           </p>
         </motion.div>
       </section>
@@ -41,12 +41,12 @@ export default function Contents() {
             className="flex flex-col items-center"
           >
             <h2 className="font-bold text-3xl md:text-5xl mb-16 text-gray-800 text-center">
-              Let Me Introduce Myself
+              Let me introduce myself
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mx-auto">
               <div className="md:w-1/2 md:pr-8 mb-8 md:mb-0">
-                <p className="text-lg leading-relaxed text-gray-700 text-center md:text-left">
-                  I work on front-end and back-end development and manage deployments as well. I often laugh when updating my bio, considering whether to label myself as a full stack developer, a DevOps person, or maybe even Superman in disguise.
+                <p className="text-base leading-relaxed text-gray-700 text-center md:text-justify">
+                  A Full Stack Developer who adapts easily to various technologies to meet project demands with high delivery times. Experienced in web and desktop application development, with a focus on integrating geolocation and AI technologies. I am also often responsible for managing the production deployment process and training users to operate complex systems.
                 </p>
               </div>
               <div className="md:w-1/2 flex justify-center">
