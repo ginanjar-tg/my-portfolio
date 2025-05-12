@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Contents from "./contents";
 
 export default function Navbar() {
   useEffect(() => {
@@ -41,7 +40,7 @@ export default function Navbar() {
               >
                 <path
                   strokeLinecap="round"
-                  strokeLinejoin="round"  // Corrected comment style
+                  strokeLinejoin="round"  
                   strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 ></path>
@@ -63,7 +62,7 @@ export default function Navbar() {
           </div>
         </div>
         {/* Page content here */}
-        <Contents />
+        {/* Contents component is now imported directly in index.js */}
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
