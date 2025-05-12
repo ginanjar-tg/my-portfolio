@@ -58,7 +58,7 @@ export default function Contents() {
   ];
   
   // Project data separated by category
-  const workExperience = [
+   const workExperience = [
     {
       title: {
         id: "IT Consultant",
@@ -74,6 +74,38 @@ export default function Contents() {
       company: "PT. Maxxima Innovative Engineering",
       year: "2023-2026",
       type: "fulltime"
+    },
+    {
+      title: {
+        id: "Web Developer",
+        en: "Web Developer",
+        zh: "Web开发"
+      },
+      description: {
+        id: "Berperan sebagai Web Developer Intern, saya merancang dan membangun RESTful API menggunakan Lumen (Laravel). Selain itu, saya mengembangkan antarmuka website yang interaktif dan responsif dengan ReactJS untuk mendukung kebutuhan bisnis perusahaan.",
+        en: "As a Web Developer Intern, I designed and built RESTful APIs using Lumen (Laravel). Additionally, I developed interactive and responsive website interfaces with ReactJS to support the company's business needs.",
+        zh: "作为Web开发实习生，我使用Lumen（Laravel）设计并开发RESTful API，并利用ReactJS开发了交互性强且响应迅速的网站界面，以支持公司的业务需求。"
+      },
+      techStack: ["Lumen", "Laravel", "ReactJS"],
+      company: "PT. Mediatama Kreasi Informatika",
+      year: "2022-2022",
+      type: "internship"
+    },
+    {
+      title: {
+        id: "IT Support",
+        en: "IT Support",
+        zh: "IT支持"
+      },
+      description: {
+        id: "Sebagai IT Support Intern, saya bertanggung jawab memastikan kelancaran operasional IT di lingkungan kantor, mulai dari instalasi perangkat lunak hingga pemeliharaan perangkat keras. Saya juga menangani troubleshooting berbagai masalah komputer untuk mendukung produktivitas karyawan.",
+        en: "As an IT Support Intern, I was responsible for ensuring smooth IT operations in the office environment, from software installation to hardware maintenance. I also handled troubleshooting various computer issues to support employee productivity.",
+        zh: "作为IT支持实习生，我负责办公室IT运维，包括软件安装和硬件维护，并处理各类计算机故障，保障员工的工作效率。"
+      },
+      techStack: null,
+      company: "Bank Syariah Indonesia",
+      year: "2018-2018",
+      type: "internship"
     }
   ];
 
@@ -236,10 +268,9 @@ export default function Contents() {
         )}
       </header>
 
-      {/* State for mobile menu */}
-      const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-      
       {/* Mouse follower effect */}
+      
+      {/* Mouse follower effect - only shown on desktop */}
       <div 
         className="mouse-follower hidden md:block" 
         style={{
@@ -330,7 +361,7 @@ export default function Contents() {
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-5 pattern-grid z-0"></div>
         
-        <div className="container mx-auto px-4 py-16 relative z-10">
+        <div className="container mx-auto px-4 py-16 relative z-20">
           <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -393,8 +424,8 @@ export default function Contents() {
                     <Image
                       src={pixelPic}
                       alt="Ginanjar&apos;s Pixel Photo"
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      style={{ objectFit: 'cover' }}
                       className="rounded-xl transform transition duration-700 hover:scale-110"
                     />
                   </div>
@@ -460,20 +491,21 @@ export default function Contents() {
         </div>
       </section>
       
-      <section id="projects" className="min-h-screen relative py-20 overflow-x-hidden bg-gradient-to-b from-gray-900 to-blue-900">
+      <section id="projects" className="min-h-screen relative py-20 overflow-hidden bg-gradient-to-b from-gray-900 to-blue-900 z-10 w-full">
         {/* Background decorations */}
         <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-blue-500/10 to-transparent"></div>
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/20 rounded-full filter blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/20 rounded-full filter blur-3xl"></div>
         
-        <div className="container mx-auto px-4 py-16 relative z-10">
+        <div className="container mx-auto px-4 py-16 relative z-20">
           <motion.div
+            className="projects-motion-container"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <h2 className="text-center font-bold text-3xl md:text-5xl mb-6 text-white relative inline-block mx-auto md:mx-0">
+            <h2 className="w-full text-center md:text-left font-bold text-3xl md:text-5xl mb-6 md:mb-16 text-white relative inline-block mx-auto md:mx-0">
               <span className="relative z-10">{t('projectsTitle')}</span>
               <div className="absolute -bottom-2 left-0 w-full h-3 bg-primary-color/30 rounded-lg -z-10 transform -rotate-1"></div>
             </h2>
@@ -511,13 +543,17 @@ export default function Contents() {
                     <p className="text-gray-300 mb-4 flex-grow">{project.description[language]}</p>
                     <div>
                       <p className="text-gray-400 text-sm mb-1">{t('techStack')}:</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.techStack.map((tech, techIndex) => (
-                          <span key={techIndex} className="bg-blue-800 text-white text-xs px-2 py-1 rounded">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
+                      {Array.isArray(project.techStack) && project.techStack.length > 0 ? (
+                        <div className="flex flex-wrap gap-2">
+                          {project.techStack.map((tech, techIndex) => (
+                            <span key={techIndex} className="bg-blue-800 text-white text-xs px-2 py-1 rounded">
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <span className="text-gray-500 text-xs">-</span>
+                      )}
                       <div className="mt-4 pt-4 border-t border-white/10">
                         <p className="text-secondary-color font-medium">{project.company}</p>
                       </div>
@@ -551,7 +587,6 @@ export default function Contents() {
                         src={project.image}
                         alt={project.title[language]}
                         fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         style={{ objectFit: 'cover' }}
                         className="transition-transform duration-500 hover:scale-110"
                       />
@@ -728,7 +763,7 @@ export default function Contents() {
         <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse"></div>
         <div className="absolute top-40 right-10 w-40 h-40 bg-purple-500/20 rounded-full filter blur-3xl animate-pulse animation-delay-2000"></div>
         
-        <div className="container mx-auto px-4 py-16 relative z-10">
+        <div className="container mx-auto px-4 py-16 relative z-20">
           <motion.div
             initial="hidden"
             whileInView="visible"
