@@ -729,11 +729,11 @@ export default function Contents() {
                   <div className="relative pl-8">
                     <div className="absolute left-0 top-2 w-3 h-3 rounded-full bg-primary-color"></div>
                     <h4 className="text-base md:text-lg font-semibold text-text-color transition-colors">{t('tagline')}</h4>
-                    <p className="text-sm md:text-base text-text-secondary transition-colors">{language === 'id' ? '2021 - Sekarang' : language === 'zh' ? '2021 - 至今' : '2021 - Present'}</p>
+                    <p className="text-sm md:text-base text-text-secondary transition-colors">{language === 'id' ? '2023 - 2026' : language === 'zh' ? '2023 - 2026' : '2023 - 2026'}</p>
                     <p className="text-sm md:text-base text-text-secondary mt-2 transition-colors">
-                      {language === 'id' ? 'Pengembangan aplikasi web dan mobile untuk berbagai klien' : 
-                       language === 'zh' ? '为各种客户开发网络和移动应用程序' : 
-                       'Web and mobile application development for various clients'}
+                      {language === 'id' ? 'Pengembangan aplikasi web dan desktop untuk berbagai klien' : 
+                       language === 'zh' ? '为各种客户开发网络和桌面应用程序' : 
+                       'Web and desktop application development for various clients'}
                     </p>
                   </div>
                   
@@ -742,7 +742,7 @@ export default function Contents() {
                     <h4 className="text-base md:text-lg font-semibold text-text-color transition-colors">
                       {language === 'id' ? 'Backend Developer Intern' : language === 'zh' ? '后端开发实习生' : 'Backend Developer Intern'}
                     </h4>
-                    <p className="text-sm md:text-base text-text-secondary transition-colors">2022 - 2023</p>
+                    <p className="text-sm md:text-base text-text-secondary transition-colors">2022 - 2022</p>
                     <p className="text-sm md:text-base text-text-secondary mt-2 transition-colors">
                       {language === 'id' ? 'Pengembangan API dan integrasi sistem' : 
                        language === 'zh' ? 'API开发和系统集成' : 
