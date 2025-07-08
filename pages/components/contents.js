@@ -61,9 +61,9 @@ export default function Contents() {
    const workExperience = [
     {
       title: {
-        id: "IT Consultant",
-        en: "IT Consultant",
-        zh: "IT顾问"
+        id: "Fullstack Developer",
+        en: "Fullstack Developer",
+        zh: "全栈开发工程师"
       },
       description: {
         id: "Berawal sebagai full-stack developer, saya bekerja dengan Laravel, PostgreSQL, MySQL, Nginx, dan Docker. Kemudian beralih ke pengembangan aplikasi desktop dengan WPF (C#), sebelum akhirnya fokus pada Python (Django) untuk fitur geolokasi berbasis AI.",
