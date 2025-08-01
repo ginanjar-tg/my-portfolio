@@ -685,7 +685,7 @@ export default function Contents() {
                 
                 <div className="flex flex-col space-y-3">
                   <a
-                    href="https://drive.google.com/file/d/110AfyqkpM6qXNIe1q6RIy6mWylz2dUpJ/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1FhWpAB6Pyw4EJptujCccPXZpIe_56mDj/view?usp=sharing"
                     className="inline-flex items-center justify-center gap-2 font-bold px-4 py-3 text-sm md:text-base text-white bg-primary-color rounded-full hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 ease-in-out"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -696,7 +696,7 @@ export default function Contents() {
                     Download CV [ENG]
                   </a>
                   <a
-                    href="https://drive.google.com/file/d/1UYpMkSd-BirvImNBxJU59b0coKGNjzT7/view?usp=sharing"
+                    href="https://drive.google.com/file/d/10qWckrj_RCKYO5QuwQg5wW-ZUPKXo7m3/view?usp=sharing"
                     className="inline-flex items-center justify-center gap-2 font-bold px-4 py-3 text-sm md:text-base text-white bg-secondary-color rounded-full hover:shadow-lg hover:translate-y-[-2px] transition-all duration-300 ease-in-out"
                     target="_blank"
                     rel="noopener noreferrer"
