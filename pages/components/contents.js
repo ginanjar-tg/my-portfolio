@@ -53,8 +53,6 @@ export default function Contents() {
     { name: "Bootstrap", color: "bg-indigo-500 text-white" },
     { name: "AWS", color: "bg-orange-500 text-white" },
     { name: "Docker", color: "bg-blue-900 text-white" },
-    { name: "Ansible", color: "bg-red-500 text-white" },
-    { name: "Jenkins", color: "bg-blue-400 text-white" },
   ];
   
   // Project data separated by category
