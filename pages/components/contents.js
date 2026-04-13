@@ -181,7 +181,7 @@ export default function Contents() {
       },
       techStack: ["Next.js", "TailwindCSS"],
       image: coskuyPic,
-      link: "https://www.coskuy.my.id/"
+      link: "https://coskuy-landing-page.vercel.app/"
     },
     {
       title: {
