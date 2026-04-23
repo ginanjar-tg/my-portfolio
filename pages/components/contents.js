@@ -64,9 +64,9 @@ export default function Contents() {
         zh: "全栈开发工程师"
       },
       description: {
-        id: "Berawal sebagai full-stack developer, saya bekerja dengan Laravel, PostgreSQL, MySQL, Nginx, dan Docker. Kemudian beralih ke pengembangan aplikasi desktop dengan WPF (C#), sebelum akhirnya fokus pada Python (Django) untuk fitur geolokasi berbasis AI.",
-        en: "Started as a full-stack developer, working with tools like Laravel, PostgreSQL, MySQL, Nginx, and Docker. Transitioned to WPF (C#) for desktop apps before moving to Python (Django) to develop AI-driven geolocation features.",
-        zh: "最初担任全栈开发，使用Laravel、PostgreSQL、MySQL、Nginx和Docker等工具。随后转向WPF (C#) 桌面应用开发，最后专注于用Python (Django) 开发AI地理定位功能。"
+        id: "Mengembangkan solusi berbasis ekosistem PHP (Laravel) dan Python (Django), termasuk implementasi fitur geolokasi berbasis AI. Tidak hanya berfokus pada penulisan kode, tetapi juga memegang tanggung jawab penuh atas infrastruktur server, meliputi manajemen database, konfigurasi lingkungan Linux/Docker, dan eksekusi deployment secara mandiri.",
+        en: "Developed solutions within the PHP (Laravel) and Python (Django) ecosystems, including the implementation of AI-driven geolocation features. Beyond software development, assumed full responsibility for server infrastructure, encompassing database management, Linux/Docker environment configuration, and independent deployment execution.",
+        zh: "开发基于 PHP (Laravel) 和 Python (Django) 生态系统的解决方案，包括实现基于 AI 的地理定位功能。除了代码编写之外，还全面负责服务器基础设施的运维，涵盖数据库管理、Linux/Docker 环境配置以及独立完成部署工作。"
       },
       techStack: ["Laravel", "PostgreSQL", "MySQL", "Nginx", "Docker", "WPF (C#)", "Python", "Django", "AI Geolocation"],
       company: "PT. Maxxima Innovative Engineering",
