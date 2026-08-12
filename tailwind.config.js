@@ -1,49 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
   content: [
-    "./src/**/*.{html,js}",
-    './node_modules/tw-elements/dist/js/**/*.js',
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./data/**/*.{js,ts}",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-      },
       colors: {
-        'primary-color': 'var(--primary-color)',
-        'secondary-color': 'var(--secondary-color)',
-        'accent-color': 'var(--accent-color)',
-        'dark-bg': 'var(--dark-bg)',
-        'light-bg': 'var(--light-bg)',
-        'text-light': 'var(--text-light)',
-        'text-dark': 'var(--text-dark)',
+        canvas: "var(--canvas)",
+        surface: "var(--surface)",
+        "surface-2": "var(--surface-2)",
+        line: "var(--line)",
+        ink: "var(--ink)",
+        muted: "var(--ink-muted)",
+        lime: "var(--lime)",
       },
-      animation: {
-        pulse: 'pulse 2s infinite',
-        gradientShift: 'gradientShift 6s ease infinite',
-        'blob': 'blob 7s infinite',
-        'float': 'float 3s ease-in-out infinite',
-        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      },
-      keyframes: {
-        pulse: {
-          '0%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.2)' },
-          '100%': { transform: 'scale(1)' },
-        },
-        gradientShift: {
-          '0%': { backgroundPosition: '0% 0%' },
-          '50%': { backgroundPosition: '100% 100%' },
-          '100%': { backgroundPosition: '0% 0%' },
-        },
-      },
-      backgroundSize: {
-        '400%': '400% 400%',
+      fontFamily: {
+        display: ["var(--font-display)", "sans-serif"],
+        body: ["var(--font-body)", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
       },
     },
   },
-  plugins: [require("daisyui"), require("tw-elements/dist/plugin")],
+  plugins: [],
 };

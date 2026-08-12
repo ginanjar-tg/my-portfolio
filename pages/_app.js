@@ -1,36 +1,18 @@
 import "../styles/globals.css";
-import { useEffect } from "react";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { AppProvider } from "../context/AppContext";
 
-function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    // Initialize tw-elements
-    const use = async () => {
-      (await import("tw-elements")).default;
-    };
-    use();
-    
-    // Check for dark mode preference on initial load
-    // This helps prevent flash of unstyled content
-    if (typeof window !== 'undefined') {
-      const darkModePreference = localStorage.getItem('darkMode');
-      if (darkModePreference === 'true') {
-        document.documentElement.classList.add('dark');
-      } else if (darkModePreference === null) {
-        // Check system preference if no saved preference
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (prefersDark) {
-          document.documentElement.classList.add('dark');
-          localStorage.setItem('darkMode', 'true');
-        }
-      }
-    }
-  }, []);
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
+const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
+function MyApp({ Component, pageProps }) {
   return (
-    <AppProvider>
-      <Component {...pageProps} />
-    </AppProvider>
+    <div className={`${spaceGrotesk.variable} ${inter.variable} ${jetBrainsMono.variable}`}>
+      <AppProvider>
+        <Component {...pageProps} />
+      </AppProvider>
+    </div>
   );
 }
 
