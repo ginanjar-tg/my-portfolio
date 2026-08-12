@@ -93,13 +93,13 @@ export default function Hero() {
           animate="visible"
           className="hidden md:block"
         >
-          <div className="w-72 overflow-hidden rounded-xl border border-line">
+          <div className="w-52 overflow-hidden rounded-xl border border-line">
             <Image
               src={ginanjarPic}
               alt="Portrait of Ginanjar Tubagus Gumilar"
-              width={288}
-              height={360}
-              className="h-[360px] w-full object-cover"
+              width={800}
+              height={800}
+              className="h-auto w-full"
             />
           </div>
           <figcaption className="mt-3 text-right font-mono text-xs text-muted">

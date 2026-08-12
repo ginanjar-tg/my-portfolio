@@ -64,14 +64,13 @@ export default function Projects() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.15 }}
-              className="panel group flex flex-col overflow-hidden transition-colors hover:border-lime/60"
+              className="panel flex flex-col overflow-hidden transition-colors hover:border-lime/60"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="border-b border-line">
                 <Image
                   src={project.image}
                   alt={project.title[language]}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="h-auto w-full"
                 />
               </div>
               <div className="flex flex-1 flex-col p-5">

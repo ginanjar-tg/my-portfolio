@@ -22,12 +22,13 @@ export default function Resume() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="panel flex flex-col justify-between p-8"
+            className="panel flex flex-col p-8"
           >
             <div>
               <h3 className="eyebrow">{t("resumeSub")}</h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted">{t("cvNote")}</p>
             </div>
-            <div className="mt-8 space-y-3">
+            <div className="mt-auto space-y-3 pt-8">
               <a
                 href={contact.cvEn}
                 target="_blank"

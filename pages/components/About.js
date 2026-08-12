@@ -41,13 +41,13 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="overflow-hidden rounded-xl border border-line">
+            <div className="w-full max-w-sm overflow-hidden rounded-xl border border-line">
               <Image
                 src={pixelPic}
                 alt="Pixel-art portrait of Ginanjar"
-                width={480}
-                height={320}
-                className="w-full object-cover transition-transform duration-500 hover:scale-105"
+                width={800}
+                height={800}
+                className="h-auto w-full"
               />
             </div>
             <h3 className="eyebrow mb-4 mt-10">{t("technicalSkillsTitle")}</h3>
