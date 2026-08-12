@@ -1,73 +1,15 @@
-/* Tailwind CSS directives - these may show as lint errors in some editors but are valid */
-/* These directives are processed by the Tailwind CSS build process */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap');
-
 :root {
-  /* Common colors that don't change with theme */
-  --primary-color: #4F46E5;
-  --secondary-color: #10B981;
-  --accent-color: #F43F5E;
-  
-  /* Light mode variables (default) */
-  --bg-color: #F9FAFB;
-  --bg-secondary: #F3F4F6;
-  --text-color: #1F2937;
-  --text-secondary: #4B5563;
-  --card-bg: #FFFFFF;
-  --card-border: #E5E7EB;
-  
-  /* These are for reference only */
-  --dark-bg: #0F172A;
-  --light-bg: #F3F4F6;
-  --text-light: #F9FAFB;
-  --text-dark: #1F2937;
-}
-
-html.dark {
-  --bg-color: #0F172A;
-  --bg-secondary: #1E293B;
-  --text-color: #F9FAFB;
-  --text-secondary: #D1D5DB;
-  --card-bg: #1E293B;
-  --card-border: #374151;
-}
-
-/* Apply CSS variables to body and all elements */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Ensure sections with background colors also respect the theme */
-.bg-bg-secondary {
-  background-color: var(--bg-secondary);
-  transition: background-color 0.3s ease;
-}
-
-.bg-card-bg {
-  background-color: var(--card-bg);
-  transition: background-color 0.3s ease;
-}
-
-.text-text-color {
-  color: var(--text-color);
-  transition: color 0.3s ease;
-}
-
-.text-text-secondary {
-  color: var(--text-secondary);
-  transition: color 0.3s ease;
-}
-
-.border-card-border {
-  border-color: var(--card-border);
-  transition: border-color 0.3s ease;
+  --canvas: #0A0A0C;
+  --surface: #121215;
+  --surface-2: #1A1A1F;
+  --line: #26262B;
+  --ink: #F4F4F5;
+  --ink-muted: #A1A1AA;
+  --lime: #BEF264;
 }
 
 html {
@@ -75,93 +17,64 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Custom Animations */
-.gradient-text {
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  background-size: 200% 100%;
-  animation: gradient-shift 5s ease infinite;
+::selection {
+  background: var(--lime);
+  color: #0A0A0C;
 }
 
-@keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
 }
 
-.floating {
-  animation: float 3s ease-in-out infinite;
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(190, 242, 100, 0.14) 1px, transparent 1px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 75%);
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+.panel {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
 }
 
-.shine-effect {
-  position: relative;
-  overflow: hidden;
-}
-
-.shine-effect::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
-  transform: skewX(-25deg);
-  animation: shine 3s infinite;
-}
-
-@keyframes shine {
-  0% { left: -100%; }
-  20% { left: 100%; }
-  100% { left: 100%; }
-}
-
-/* Card styles */
-.glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  transform: translateZ(0);
-}
-
-.skill-pill {
-  display: inline-block;
-  padding: 0.5rem 1rem;
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.03em;
+  color: var(--ink-muted);
+  border: 1px solid var(--line);
   border-radius: 9999px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  margin: 0.25rem;
+  white-space: nowrap;
 }
 
-.skill-pill:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lime);
 }
 
-.mouse-follower {
-  position: fixed;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  border: 2px solid var(--primary-color);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  transition: width 0.2s, height 0.2s;
-  mix-blend-mode: difference;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
