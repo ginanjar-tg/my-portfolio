@@ -36,6 +36,27 @@ export const languages = [
 export const workExperience = [
   {
     title: {
+      id: "Full-Stack Developer",
+      en: "Full-Stack Developer",
+      zh: "全栈开发工程师",
+    },
+    short: {
+      id: "Membangun platform manajemen layanan untuk penjadwalan pekerja dengan Django, React, dan React Native — pelacakan Google Maps, penagihan Xero otomatis, dan perancangan skema database.",
+      en: "Building a worker dispatch and job management platform with Django, React, and React Native — Google Maps tracking, automated Xero billing, and database schema design.",
+      zh: "使用Django、React和React Native构建工人调度与任务管理平台——集成Google Maps追踪、自动化Xero账单和数据库设计。",
+    },
+    description: {
+      id: "Mengembangkan platform manajemen layanan untuk penjadwalan dan pengelolaan pekerja menggunakan Django, React, dan React Native. Mengintegrasikan Google Maps API untuk pelacakan spasial dan mengadaptasi alur kerja akuntansi Xero untuk mengotomatiskan penagihan pekerjaan. Merancang skema database bersama Project Manager serta menerapkan strategi feature-branching modular untuk version control yang rapi.",
+      en: "Developing a service management platform for worker dispatch and job management using Django, React, and React Native. Integrated Google Maps API for spatial tracking and adapted Xero accounting workflows to automate job billing. Designed database schemas in collaboration with Project Managers and established modular feature-branching strategies for clean version control.",
+      zh: "使用Django、React和React Native开发用于工人调度和任务管理的服务管理平台。集成Google Maps API进行空间追踪，并适配Xero会计工作流以自动化任务计费。与项目经理协作设计数据库架构，并建立模块化功能分支策略以实现清晰的版本控制。",
+    },
+    techStack: ["Django", "React", "React Native", "Google Maps API", "Xero"],
+    company: "ACRAFILE PTE. LTD. · Batam, Indonesia",
+    year: "2026-Present",
+    type: "fulltime",
+  },
+  {
+    title: {
       id: "Fullstack Developer",
       en: "Fullstack Developer",
       zh: "全栈开发工程师",

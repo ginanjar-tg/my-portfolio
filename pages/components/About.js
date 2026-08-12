@@ -41,32 +41,37 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="w-full max-w-sm overflow-hidden rounded-xl border border-line">
+            <div className="w-64 overflow-hidden rounded-xl border border-line">
               <Image
                 src={pixelPic}
                 alt="Pixel-art portrait of Ginanjar"
                 width={800}
                 height={800}
+                draggable={false}
                 className="h-auto w-full"
               />
             </div>
-            <h3 className="eyebrow mb-4 mt-10">{t("technicalSkillsTitle")}</h3>
-            <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => (
-                <span key={skill} className="chip">
-                  {skill}
-                </span>
-              ))}
+            <div className="mt-12">
+              <h3 className="eyebrow mb-5">{t("technicalSkillsTitle")}</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <span key={skill} className="chip">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-            <h3 className="eyebrow mb-4 mt-10">{t("languagesTitle")}</h3>
-            <ul className="divide-y divide-line border-y border-line">
-              {languages.map((lang) => (
-                <li key={lang.name} className="flex items-center justify-between py-3">
-                  <span className="text-sm text-ink">{lang.name}</span>
-                  <span className="font-mono text-xs text-muted">{lang.level[language]}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="mt-12">
+              <h3 className="eyebrow mb-5">{t("languagesTitle")}</h3>
+              <ul className="panel divide-y divide-line px-5">
+                {languages.map((lang) => (
+                  <li key={lang.name} className="flex items-center justify-between py-3">
+                    <span className="text-sm text-ink">{lang.name}</span>
+                    <span className="font-mono text-xs text-muted">{lang.level[language]}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ginanjarPic from "../../public/webp/ginanjar.webp";
+import ginanjarPic from "../../public/webp/pixel.webp";
 import { useAppContext } from "../../context/AppContext";
 import { contact } from "../../data/content";
 
@@ -99,12 +99,10 @@ export default function Hero() {
               alt="Portrait of Ginanjar Tubagus Gumilar"
               width={800}
               height={800}
+              draggable={false}
               className="h-auto w-full"
             />
           </div>
-          <figcaption className="mt-3 text-right font-mono text-xs text-muted">
-            {"// ginanjar.webp"}
-          </figcaption>
         </motion.figure>
       </div>
     </section>

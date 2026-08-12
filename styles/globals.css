@@ -68,6 +68,11 @@ body {
   color: var(--lime);
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

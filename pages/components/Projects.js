@@ -70,6 +70,7 @@ export default function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title[language]}
+                  draggable={false}
                   className="h-auto w-full"
                 />
               </div>
@@ -92,7 +93,10 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="mt-5 inline-flex items-center gap-1 font-mono text-xs text-lime hover:underline"
                   >
-                    {t("viewProject")} &nearr;
+                    {t("viewProject")}
+                    <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" />
+                    </svg>
                   </a>
                 )}
               </div>
