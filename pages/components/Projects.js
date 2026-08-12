@@ -18,7 +18,7 @@ export default function Projects() {
         <SectionHeading index="02" title={t("projectsTitle")} />
 
         <h3 className="eyebrow mb-6 mt-16">{t("workExperience")}</h3>
-        <div className="space-y-4">
+        <div className="grid gap-6 md:grid-cols-2">
           {workExperience.map((job) => (
             <motion.article
               key={job.company}
@@ -26,7 +26,7 @@ export default function Projects() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.2 }}
-              className="panel group p-6 transition-colors hover:border-lime/60"
+              className="panel flex flex-col p-6 transition-colors hover:border-lime/60"
             >
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h4 className="font-display text-xl font-semibold">{job.title[language]}</h4>
@@ -37,13 +37,13 @@ export default function Projects() {
                   <span className="font-mono text-xs text-muted">{job.year}</span>
                 </div>
               </div>
-              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">
-                {job.description[language]}
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+                {job.short[language]}
               </p>
-              <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
+              <div className="mt-4 flex flex-wrap gap-2">
                 {Array.isArray(job.techStack) &&
                   job.techStack.map((tech) => (
-                    <span key={tech} className="font-mono text-xs text-muted">
+                    <span key={tech} className="chip">
                       {tech}
                     </span>
                   ))}

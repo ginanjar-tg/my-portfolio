@@ -12,7 +12,6 @@ export const skills = [
   "C#/WPF",
   "PostgreSQL & MySQL",
   "Git",
-  "Tailwind CSS",
   "Bootstrap",
   "AWS",
   "Docker",
@@ -41,9 +40,9 @@ export const workExperience = [
       zh: "全栈开发工程师",
     },
     short: {
-      id: "Membangun platform manajemen layanan untuk penjadwalan pekerja dengan Django, React, dan React Native — pelacakan Google Maps, penagihan Xero otomatis, dan perancangan skema database.",
-      en: "Building a worker dispatch and job management platform with Django, React, and React Native — Google Maps tracking, automated Xero billing, and database schema design.",
-      zh: "使用Django、React和React Native构建工人调度与任务管理平台——集成Google Maps追踪、自动化Xero账单和数据库设计。",
+      id: "Membangun platform manajemen layanan untuk penjadwalan pekerja dengan Django, React, dan React Native, termasuk pelacakan Google Maps, penagihan Xero otomatis, dan perancangan skema database.",
+      en: "Building a worker dispatch and job management platform with Django, React, and React Native, including Google Maps tracking, automated Xero billing, and database schema design.",
+      zh: "使用Django、React和React Native构建工人调度与任务管理平台，集成Google Maps追踪、自动化Xero账单和数据库设计。",
     },
     description: {
       id: "Mengembangkan platform manajemen layanan untuk penjadwalan dan pengelolaan pekerja menggunakan Django, React, dan React Native. Mengintegrasikan Google Maps API untuk pelacakan spasial dan mengadaptasi alur kerja akuntansi Xero untuk mengotomatiskan penagihan pekerjaan. Merancang skema database bersama Project Manager serta menerapkan strategi feature-branching modular untuk version control yang rapi.",
@@ -51,7 +50,7 @@ export const workExperience = [
       zh: "使用Django、React和React Native开发用于工人调度和任务管理的服务管理平台。集成Google Maps API进行空间追踪，并适配Xero会计工作流以自动化任务计费。与项目经理协作设计数据库架构，并建立模块化功能分支策略以实现清晰的版本控制。",
     },
     techStack: ["Django", "React", "React Native", "Google Maps API", "Xero"],
-    company: "ACRAFILE PTE. LTD. · Batam, Indonesia",
+    company: "Acrafile Pte. Ltd.",
     year: "2026-Present",
     type: "fulltime",
   },
@@ -104,9 +103,9 @@ export const workExperience = [
       zh: "IT支持",
     },
     short: {
-      id: "Menjaga kelancaran IT kantor — instalasi, pemeliharaan, dan troubleshooting.",
-      en: "Kept office IT running — installations, maintenance, and troubleshooting.",
-      zh: "保障办公室IT运维——安装、维护和故障排除。",
+      id: "Menjaga kelancaran IT kantor, mulai dari instalasi, pemeliharaan, hingga troubleshooting.",
+      en: "Kept office IT running, from installations and maintenance to troubleshooting.",
+      zh: "保障办公室IT运维，负责安装、维护和故障排除。",
     },
     description: {
       id: "Sebagai IT Support Intern, saya bertanggung jawab memastikan kelancaran operasional IT di lingkungan kantor, mulai dari instalasi perangkat lunak hingga pemeliharaan perangkat keras. Saya juga menangani troubleshooting berbagai masalah komputer untuk mendukung produktivitas karyawan.",

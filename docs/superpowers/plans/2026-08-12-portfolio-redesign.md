@@ -931,7 +931,7 @@ git commit -m "feat: add navbar with scroll spy and mobile menu"
 - Create: `pages/components/Hero.js`
 
 **Interfaces:**
-- Consumes: `useAppContext()` → `t`; `contact` from `data/content.js`; `ginanjarPic` from `../../public/webp/ginanjar.webp`.
+- Consumes: `useAppContext()` → `t`; `contact` from `data/content.js`; `ginanjarPic` from `../../public/webp/pixel.webp`.
 - Produces: full-height hero with dot grid, eyebrow, display name, intro line, CTAs, social row, framed photo at `md+`. Rendered by `index.js`.
 
 - [ ] **Step 1: Create `pages/components/Hero.js`**
@@ -939,7 +939,7 @@ git commit -m "feat: add navbar with scroll spy and mobile menu"
 ```jsx
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ginanjarPic from "../../public/webp/ginanjar.webp";
+import ginanjarPic from "../../public/webp/pixel.webp";
 import { useAppContext } from "../../context/AppContext";
 import { contact } from "../../data/content";
 
@@ -1041,9 +1041,6 @@ export default function Hero() {
               className="h-[360px] w-full object-cover"
             />
           </div>
-          <figcaption className="mt-3 text-right font-mono text-xs text-muted">
-            {"// ginanjar.webp"}
-          </figcaption>
         </motion.figure>
       </div>
     </section>
@@ -1609,7 +1606,7 @@ export default function Home() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ginanjarstuff.my.id" />
-        <meta property="og:image" content="/webp/ginanjar.webp" />
+        <meta property="og:image" content="/webp/pixel.webp" />
       </Head>
       <Navbar />
       <main>

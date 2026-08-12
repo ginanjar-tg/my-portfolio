@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ginanjarPic from "../../public/webp/pixel.webp";
+import ginanjarPic from "../../public/webp/ginanjar.webp";
 import { useAppContext } from "../../context/AppContext";
 import { contact } from "../../data/content";
 
@@ -93,7 +93,7 @@ export default function Hero() {
           animate="visible"
           className="hidden md:block"
         >
-          <div className="w-52 overflow-hidden rounded-xl border border-line">
+          <div className="w-64 overflow-hidden rounded-xl border border-line">
             <Image
               src={ginanjarPic}
               alt="Portrait of Ginanjar Tubagus Gumilar"

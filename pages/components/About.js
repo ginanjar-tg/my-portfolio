@@ -27,7 +27,17 @@ export default function About() {
           >
             <p className="text-lg leading-relaxed text-muted">{t("aboutP1")}</p>
             <p className="mt-4 text-lg leading-relaxed text-muted">{t("aboutP2")}</p>
-            <div className="panel mt-10 p-6">
+            <div className="mt-12">
+              <h3 className="eyebrow mb-5">{t("technicalSkillsTitle")}</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <span key={skill} className="chip">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="panel mt-12 p-6">
               <h3 className="eyebrow mb-4">{t("educationTitle")}</h3>
               <p className="font-medium text-ink">{t("universityName")}</p>
               <p className="mt-1 text-sm text-muted">{t("universityMajor")}</p>
@@ -41,7 +51,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="w-64 overflow-hidden rounded-xl border border-line">
+            <div className="w-64 overflow-hidden rounded-xl">
               <Image
                 src={pixelPic}
                 alt="Pixel-art portrait of Ginanjar"
@@ -50,16 +60,6 @@ export default function About() {
                 draggable={false}
                 className="h-auto w-full"
               />
-            </div>
-            <div className="mt-12">
-              <h3 className="eyebrow mb-5">{t("technicalSkillsTitle")}</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span key={skill} className="chip">
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </div>
             <div className="mt-12">
               <h3 className="eyebrow mb-5">{t("languagesTitle")}</h3>
