@@ -28,7 +28,7 @@ const socials = [
 ];
 
 export default function Hero() {
-  const { t } = useAppContext();
+  const { t, language } = useAppContext();
 
   return (
     <section id="home" className="relative flex min-h-screen items-center pt-16">
@@ -44,7 +44,13 @@ export default function Hero() {
             animate="visible"
             className="font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl"
           >
-            Ginanjar Tubagus <span className="text-lime">Gumilar</span>
+            {language === "zh" ? (
+              <span>景曜</span>
+            ) : (
+              <>
+                Ginanjar Tubagus <span className="text-lime">Gumilar</span>
+              </>
+            )}
           </motion.h1>
           <motion.p
             variants={fadeUp(0.2)}

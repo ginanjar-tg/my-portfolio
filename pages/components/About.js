@@ -51,7 +51,7 @@ export default function About() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="w-64 overflow-hidden rounded-xl">
+            <div className="mx-auto w-64 overflow-hidden rounded-xl">
               <Image
                 src={pixelPic}
                 alt="Pixel-art portrait of Ginanjar"

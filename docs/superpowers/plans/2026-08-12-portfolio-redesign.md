@@ -533,7 +533,7 @@ const translations = {
     projects: "Projects",
     resume: "Resume",
     contact: "Contact",
-    heroEyebrow: "Full-Stack Developer · Bandung",
+    heroEyebrow: "Full-Stack Developer · Batam",
     heroIntro: "I build fast, reliable web and desktop applications — from Laravel and Django to Next.js and WPF — and own the infrastructure that runs them.",
     ctaProjects: "View Projects",
     ctaResume: "Download CV",
@@ -574,7 +574,7 @@ const translations = {
     projects: "Proyek",
     resume: "Resume",
     contact: "Kontak",
-    heroEyebrow: "Full-Stack Developer · Bandung",
+    heroEyebrow: "Full-Stack Developer · Batam",
     heroIntro: "Saya membangun aplikasi web dan desktop yang cepat dan andal — dari Laravel dan Django hingga Next.js dan WPF — serta mengelola infrastruktur yang menjalankannya.",
     ctaProjects: "Lihat Proyek",
     ctaResume: "Unduh CV",
@@ -1597,12 +1597,12 @@ export default function Home() {
         <title>Ginanjar Tubagus Gumilar — Full Stack Developer</title>
         <meta
           name="description"
-          content="Full stack developer based in Bandung, Indonesia. Building fast, reliable web and desktop applications with Laravel, Django, Next.js and more."
+          content="Full stack developer based in Batam, Indonesia. Building fast, reliable web and desktop applications with Laravel, Django, Next.js and more."
         />
         <meta property="og:title" content="Ginanjar Tubagus Gumilar — Full Stack Developer" />
         <meta
           property="og:description"
-          content="Full stack developer based in Bandung, Indonesia. Building fast, reliable web and desktop applications with Laravel, Django, Next.js and more."
+          content="Full stack developer based in Batam, Indonesia. Building fast, reliable web and desktop applications with Laravel, Django, Next.js and more."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ginanjarstuff.my.id" />
